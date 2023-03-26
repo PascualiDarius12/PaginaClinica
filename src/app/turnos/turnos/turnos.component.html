@@ -1,0 +1,74 @@
+
+
+<div class="mt-5" style="display: flex;flex-direction: row; justify-content: center;">
+    <div class = "card bg-success w-25" >
+        <div class="card-body">
+       
+       
+            <form method="post" action="enviar.php">
+            
+                <div class="mb-2">
+                <label class="mx-2 text-white">
+                    Nombre y Apellido:
+                </label>
+                <input type="text" class="form-control"  name="formularioNombre" placeholder="Por favor Ingrese su nombre completo">
+                <div class="aler alert-danger" [hidden]="true">
+                    Llenar este campo
+                </div>
+            </div>
+           
+            <div class="mb-2">
+                <label class="mx-2 text-white">
+                    DNI:
+                </label>
+                <input type="text" class="form-control" name="formularioDni" placeholder="Por favor Ingrese su DNI">  
+            </div>
+
+            <div class="mb-2">
+                <label class="mx-2 text-white">
+                    Telefono:
+                </label>
+                <input type="text" class="form-control" name="telefono" placeholder="Por favor Ingrese su numero de telefono">  
+            </div>
+
+            <div class="mb-2">
+                <label class="mx-2 text-white">
+                    Especialidad:
+                </label>
+                <select class="form-select" name="especialidad" id="">
+                    <option value="0">--</option>
+                    <option value="1">Kinesiologia</option>
+                    <option value="2">Fonoaudiologia</option>
+                    <option value="3">Psicologia</option>
+                    <option value="4">Hidroterapia</option>
+                </select>
+            </div>
+           
+            <div class="mb-2">
+                <label class="mx-2 text-white">
+                    Obra Social:
+                </label>
+                <select class="form-select" name="obraSocial" id="">
+                    <option value="0">--</option>
+                    <option value="1">Dosep</option>
+                    <option value="2">Oseca</option>
+                    <option value="3">Swift Medical</option>
+                    <option value="4">Sancor</option>
+                </select>
+            </div>
+        
+            
+        </form>
+        
+        <div>
+           
+            <button type="submit" class="btn btn-primary mt-2" style="margin-left: 33%;" (click)="guardar()" >Generar turno</button></div>
+            <div class="aler alert-success mt-2" [hidden]="!guardado">
+                Turno Solicitado, en brevedad secretaria se comunicara con usted.
+            </div>
+            
+        </div>
+        
+        
+        </div>
+    </div>
