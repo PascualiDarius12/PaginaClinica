@@ -1,13 +1,32 @@
-<nav>
-    <ul class="bg-primary w-100 h-50">
-       <a class="btn btn-primary" routerLink="/">Home</a>
-       <a class="btn btn-primary" routerLink="/servicios">Servicios</a>
-       <a class="btn btn-primary" routerLink="/acceso">Acceso</a>
-       <a class="btn btn-primary" routerLink="/profesionales">Profesionales</a>
-       <a class="btn btn-success my-2" routerLink="/turnos">Turnos</a>
-       <a routerLink="/" style="width: 200px; margin-left: 50%;"> 
-        <img routerLink="/" style="width: 12%;" src="https://images2.imgbox.com/72/8b/ic4qD3n9_o.jpg" alt="">
-       </a>
-    </ul>
-</nav>
 
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+      <img src="https://images2.imgbox.com/28/43/CCRSNhWq_o.jpg" alt="Bootstrap" width="95" height="45">
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="btn" aria-current="page" routerLink="/">Bienvenido</a>
+         </li>
+         <li class="nav-item">
+           <a class="btn" routerLink="/servicios">Servicios</a>
+         </li>
+         <li class="nav-item">
+           <a class="btn" routerLink="/acceso">Acceso</a>
+         </li>
+         <li class="nav-item">
+           <a class="btn" routerLink="/profesionales">Profesionales</a>
+         </li>
+         
+         
+          
+       </ul>
+       
+     </div>
+   </div>
+   <a class="btn btn-success d-flex mx-2" routerLink="/turnos">Turnos</a>
+ </nav>
